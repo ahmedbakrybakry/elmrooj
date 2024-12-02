@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/share_widgets/default_appbar.dart';
 
 class AboutUs extends StatelessWidget {
   const AboutUs({super.key});
@@ -10,35 +11,8 @@ class AboutUs extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(
-                vertical: 20,
-                horizontal: 30,
-              ),
-              color: Colors.blue,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                      onPressed: () {},
-                      icon: Container(
-                        width: 30,
-                        height: 40,
-                        color: Colors.amber,
-                        child: const Icon(
-                          Icons.menu,
-                          color: Colors.white,
-                        ),
-                      )),
-                  const Spacer(),
-                  Image.asset(
-                    "assets/mainlogo.png",
-                    width: 70,
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
+           DefaultAppbar(),
+           SizedBox(
               height: 500,
               child: Stack(
                 children: [

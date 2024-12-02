@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/constants/assets.dart';
 import 'package:flutter_application_1/core/constants/colors.dart';
+import 'package:flutter_application_1/features/about_us/about_us.dart';
 import 'package:flutter_application_1/features/splash/screens/splash_screen.dart';
 
 // نحتاج أن نضيف الاستيراد للصفحات التي سيتم التنقل إليها
@@ -15,7 +16,7 @@ class DefaultAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.17,
-      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
       color: AppColors.barcolor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -38,7 +39,7 @@ class DefaultAppbar extends StatelessWidget {
               ),
             ),
           ),
-          Spacer(),
+          const Spacer(),
           // الشعار
           Image.asset(
             Images.logomain,
@@ -68,7 +69,7 @@ class DefaultAppbar extends StatelessWidget {
           value: item,
           child: Text(
             item,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black, // النص باللون الأسود
               fontSize: 18,
             ),
@@ -91,7 +92,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
              // HomeScreen()
-            SplashScreen()
+            const SplashScreen()
           ),
         );
         break;
@@ -100,8 +101,8 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
 
-          //    AboutScreen()
-          SplashScreen()
+              const AboutUs()
+         
           ),
         );
         break;
@@ -115,7 +116,7 @@ class DefaultAppbar extends StatelessWidget {
           MaterialPageRoute(builder: (context) =>
 
             //  BlogScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -124,7 +125,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
             //  ContactScreen()
-            SplashScreen()
+            const SplashScreen()
           ),
         );
         break;
@@ -152,13 +153,13 @@ class DefaultAppbar extends StatelessWidget {
     // عرض الـ Dropdown لقائمة الخدمات
     showMenu(
       context: context,
-      position: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
+      position: const RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
       items: servicesMenuItems.map((String item) {
         return PopupMenuItem<String>(
           value: item,
           child: Text(
             item,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black, // النص باللون الأسود
               fontSize: 18,
             ),
@@ -181,7 +182,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
               //WebDesignScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -190,7 +191,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
              // EcommerceDesignScreen()
-            SplashScreen()
+            const SplashScreen()
           ),
         );
         break;
@@ -199,7 +200,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
              // AdvertisingVideosScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -208,7 +209,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
             //  WebsiteManagementScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -217,7 +218,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
           //    SeoOptimizationScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -226,7 +227,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
             //  CrmSystemScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -235,7 +236,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
           //    SocialMediaManagementScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -244,7 +245,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
           //    GoogleAdsScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -253,7 +254,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
               //SocialMediaDesignsScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;
@@ -262,7 +263,7 @@ class DefaultAppbar extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) =>
           //    IncreaseFollowersScreen()
-          SplashScreen()
+          const SplashScreen()
           ),
         );
         break;

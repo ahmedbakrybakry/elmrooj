@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/constants/colors.dart';
-import 'package:flutter_application_1/features/splash/components/default_appbar.dart';
+import 'package:flutter_application_1/core/share_widgets/default_appbar.dart';
 
 import '../../../core/constants/assets.dart';
 
