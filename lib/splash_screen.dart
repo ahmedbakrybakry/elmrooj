@@ -5,30 +5,39 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-children: [
-  Container(
-    padding: EdgeInsets.symmetric(vertical: 20,
-    horizontal: 30,
-    ),
-    color: Colors.blue,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-IconButton(onPressed: (){}, icon: Container(
-  width: 30,height: 40,
-  color: Colors.amber,
-  child: Icon(Icons.menu,color: Colors.white,),
-)),
-        
-        Spacer(),
-        Image.asset("",)
-      ],
-    ),
-  )
-],
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 20,
+                horizontal: 30,
+              ),
+              color: Colors.blue,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                      onPressed: () {},
+                      icon: Container(
+                        width: 30,
+                        height: 40,
+                        color: Colors.amber,
+                        child: const Icon(
+                          Icons.menu,
+                          color: Colors.white,
+                        ),
+                      )),
+                  const Spacer(),
+                  Image.asset(
+                    "assets/mainlogo.png",
+                    width: 70,
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
