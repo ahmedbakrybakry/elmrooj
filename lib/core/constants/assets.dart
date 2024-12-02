@@ -1,4 +1,6 @@
-class images{
-  static String main="assets";
-static String logomain="${main}mainlogo.png";
+class Images{
+  static String main="assets/";
+  static String logomain="assets/mainlogo.png";
+  static String mainbackground="assets/splashimage.jpeg";
+
 }
